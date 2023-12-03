@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular-serverless-ssr": "node dist/angular-serverless-ssr/server/server.mjs"
+    "serve:ssr:angular-serverless-ssr": "node dist/angular-serverless-ssr/server/server.mjs",
+    "dev": "sst dev",
+    "deploy": "sst deploy"
   },
   "private": true,
   "dependencies": {
@@ -33,12 +35,15 @@
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "aws-cdk-lib": "^2.110.1",
+    "constructs": "^10.3.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "sst": "^2.36.8",
     "typescript": "~5.2.2"
   }
 }
