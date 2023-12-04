@@ -49,7 +49,6 @@ export function Infrastructure({ stack }: StackContext) {
 
     const customCachePolicy = new CachePolicy(stack, "CustomCachePolicy", {
         defaultTtl: Duration.minutes(30),
-        minTtl: Duration.minutes(20),
         maxTtl: Duration.minutes(30),
         enableAcceptEncodingGzip: true,
         enableAcceptEncodingBrotli: true,
